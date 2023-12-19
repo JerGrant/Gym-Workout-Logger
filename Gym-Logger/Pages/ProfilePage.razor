@@ -1,4 +1,6 @@
 ﻿@page "/profilePage"
+@using Gym_Logger.Data
+@inject AppUserService UserService
 
 <div class="topHeaderHomeContainer">
     <div class="welcomeFont"> Your Profile</div>
@@ -7,15 +9,15 @@
   
 <div class="profileDetailContainer">
     <img class="avatarImg" />
-    <h1> UserName </h1>
-    <h2> Workouts Workouts Done </h2>
-    <h2> HrsWrkOut Worked Out </h2>
-    <h2> IbsLifted Ibs Total </h2>
-    <h2> Height: height </h2>
-    <h2> Weight: weight </h2>
-    <h2> Goal Weight: gweight </h2>
-    <h2> BMI: bmi </h2>
-    <h2> Daily Calories: dcals </h2>
+    <h1> @userDetails.UserName </h1>
+    <h2> @userDetails.WorkoutsCompleted Workouts Done </h2>
+    <h2> @userDetails.HoursWorkedOut Hrs Worked Out </h2>
+    <h2> @userDetails.IbsLifted Ibs Lifted </h2>
+    <h2> Height: @userDetails.Height </h2>
+    <h2> Weight: @userDetails.Weight </h2>
+    <h2> Goal Weight: @userDetails.GoalWeight </h2>
+    <h2> BMI: @userDetails.BMI </h2>
+    <h2> Daily Calories: @userDetails.DailyCalories </h2>
 </div>
 
 <div class="chartPage">
@@ -37,5 +39,12 @@
 
 
 @code {
+    private AppUser userDetails;
+    private string username = "JeremiahGrant";
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        userDetails = UserService.GetAppUser(username);
+    }
 }

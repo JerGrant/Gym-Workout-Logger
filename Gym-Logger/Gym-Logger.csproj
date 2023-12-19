@@ -50,15 +50,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Data\appUser.cs" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="Pages\Index.razor.css" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Data\appUser.cs" />
       <Content Include="Pages\Index.razor.css" />
       <Content Include="Properties\open-iconic\FONT-LICENSE" />
       <Content Include="Properties\open-iconic\font\css\open-iconic-bootstrap.min.css" />

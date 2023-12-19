@@ -22,8 +22,7 @@ namespace Gym_Logger
     		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddSingleton<WeatherForecastService>();
-
+            builder.Services.AddSingleton<AppUserService>();
             return builder.Build();
         }
     }
