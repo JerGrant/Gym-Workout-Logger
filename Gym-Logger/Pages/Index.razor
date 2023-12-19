@@ -1,7 +1,16 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div class="topHeaderHomeContainer">
+    <div class="welcomeFont"> Welcome Back,</div>
+    <NavLink class="navButton" href="settingsPage"><span class="material-symbols-sharp settingsIcon">settings</span></NavLink>
+</div>
 
-Welcome to your new app.
+<div class="profileDetailContainer">
+    <img class="avatarImg" />
+    <h1> UserName </h1>
+    <h2> NumOfWorkouts Workouts Done </h2>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<button class="newWorkoutButton"> Start a New Workout </button>
+<button class="fitAIButton"> Talk to FitAI </button>
+<button class="workoutHistoryButton"> View Workout History </button>

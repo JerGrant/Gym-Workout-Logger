@@ -1,20 +1,15 @@
-﻿<nav>
+﻿@page "/nav"
+
+<nav>
     <div class="navIconsContainer">
-        <span class="navIcons">P</span>
-        <span class="navIcons">H</span>
-        <span class="navIcons">W</span>
-        <span class="navIcons">E</span>
-        <span class="navIcons">A</span>
+        <NavLink class="navButton" href="profilePage"><span class="material-symbols-sharp navIcons">person</span></NavLink>
+        <NavLink class="navButton" href="historyPage"><span class="material-symbols-sharp navIcons">history</span></NavLink>
+        <NavLink class="navButton" href="profilePage"><span class="material-symbols-sharp navIcons">sports</span></NavLink>
+        <NavLink class="navButton" href="profilePage"><span class="material-symbols-sharp navIcons">fitness_center</span></NavLink>
+        <NavLink class="navButton" href="profilePage"><span class="material-symbols-sharp navIcons">network_intelligence_update</span></NavLink>
     </div>
 </nav>
 
 @code {
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 }
