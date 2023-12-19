@@ -202,6 +202,7 @@ nav {
     margin-bottom: 2%;
     overflow: hidden;
     width: 98%;
+    margin-bottom: 15%;
 }
 
 .historyTab {
@@ -242,3 +243,75 @@ nav {
 }
 
 /* ------------------------   HISTORY PAGE END   ------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------   WORKOUT PAGE START   ------------------------ */
+
+.workoutContainer {
+    height: 90%;
+    width: 98%;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.workoutTabs {
+    width: 100%;
+    height: 20vh;
+    border-radius: 2%;
+    background-color: #404040;
+    margin: auto;
+    postition: relative;
+    margin-bottom: 5%;
+}
+
+.workoutLeftSide {
+    width: 40%;
+    height: 100%;
+    float: left;
+    line-height: 0.2;
+    overflow: hidden;
+    margin-left: 2%;
+}
+
+.workoutRightSide {
+    width: 50%;
+    height: 95%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2.5%;
+}
+
+.workoutMoreButton {
+    width: 2%;
+    height: 95%;
+    float: right;
+    padding-top: 2.5%;
+}
+
+.historyImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.newWorkoutButton {
+    background-color: #273b4f; /* Space Blue */
+}
+
+/* ------------------------   WORKOUT PAGE END   ------------------------ */
