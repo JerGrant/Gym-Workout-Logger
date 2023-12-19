@@ -1,5 +1,6 @@
 ﻿@page "/exercisePage"
-
+@using Gym_Logger.Data
+@inject ExerciseService ExerciseService
 
 <div class="topHeaderHomeContainer">
     <div class="welcomeFont">Your Exercises</div> 
@@ -12,8 +13,8 @@
 
     <div class="exerciseTabs">
         <img class="exerciseImg" />
-        <h1 class="exerciseName">Exercise</h1>
-        <h2 class="exerciseName">ExerciseType</h2>
+        <h1 class="exerciseName">@exerciseDetails.exerciseName</h1>
+        <h2 class="exerciseName">@exerciseDetails.exerciseType</h2>
     </div>
 
     <div class="exerciseTabs">
@@ -105,5 +106,13 @@
 
 
 @code {
+    private Exercise exerciseDetails;
+    private string exerciseName = "EZ Bar Bicep Curl";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        exerciseDetails = ExerciseService.GetExercise(exerciseName);
+    }
 
 }

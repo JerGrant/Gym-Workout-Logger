@@ -23,6 +23,8 @@ namespace Gym_Logger
 #endif
 
             builder.Services.AddSingleton<AppUserService>();
+            builder.Services.AddSingleton<ExerciseService>();
+
             return builder.Build();
         }
     }
