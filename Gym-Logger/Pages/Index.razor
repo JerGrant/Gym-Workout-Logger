@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using Gym_Logger.Data
+@inject AppUserService UserService
+
 
 <div class="topHeaderHomeContainer">
     <div class="welcomeFont"> Welcome Back,</div>
@@ -7,10 +10,22 @@
 
 <div class="profileDetailContainer">
     <img class="avatarImg" />
-    <h1> UserName </h1>
-    <h2> NumOfWorkouts Workouts Done </h2>
+    <h1> @userDetails.UserName </h1>
+    <h2> @userDetails.WorkoutsCompleted Workouts Done </h2>
 </div>
 
 <button class="newWorkoutButton"> Start a New Workout </button>
 <button class="fitAIButton"> Talk to FitAI </button>
 <button class="workoutHistoryButton"> View Workout History </button>
+
+
+@code {
+    private AppUser userDetails;
+    private string username = "JeremiahGrant";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        userDetails = UserService.GetAppUser(username);
+    }
+}
