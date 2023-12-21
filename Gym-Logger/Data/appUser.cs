@@ -1,17 +1,22 @@
 ﻿namespace Gym_Logger.Data {
     public class AppUser {
+        // PKS
+        public int userId {  get; set; }
+
         // Identifiers
-        public string UserName { get; set; }
-        public string? ProfileImg {  get; set; }
+        public string userName { get; set; }
+        public string? profileImg {  get; set; }
+
         // User Attributes
-        public double? Height { get; set; }
-        public double? Weight { get; set; }
-        public double? GoalWeight { get; set; }
-        public int? DailyCalories { get; set; }
-        public double? BMI {  get; set; }
+        public double? height { get; set; }
+        public double? weight { get; set; }
+        public double? goalWeight { get; set; }
+        public int? dailyCalories { get; set; }
+        public double? bmi {  get; set; }
+
         // Gameify fields
-        public int? WorkoutsCompleted { get; set; }
-        public double? HoursWorkedOut { get; set; }
-        public double? IbsLifted {  get; set; }
+        public int? workoutsCompleted { get; set; }
+        public double? hoursWorkedOut { get; set; }
+        public double? ibsLifted {  get; set; }
     }
 }
