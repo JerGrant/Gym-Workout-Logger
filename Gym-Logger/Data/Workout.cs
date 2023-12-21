@@ -28,6 +28,6 @@ namespace Gym_Logger.Data
         public DateTime createdAt { get; set; }
 
         // Gameify
-        public double ibsLifted { get; set; }
+        public double? ibsLifted { get; set; }
     }
 }

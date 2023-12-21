@@ -17,7 +17,7 @@ namespace Gym_Logger.Data
         // Exercise Identifiers
         public string exerciseName {  get; set; }
         public string exerciseTypeId { get; set; }
-        public string? exerciseEquipmentId { get; set; }
+        public string exerciseEquipmentId { get; set; }
         public string? exerciseDescription { get; set;}
 
         // Exercise Media
