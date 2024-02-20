@@ -10,9 +10,9 @@ namespace Gym_Logger.Data
     public class ExerciseEquipment
     {
         // PK
-        public int exerciseEquipmentId { get; set; }
+        public int ExerciseEquipmentId { get; set; }
 
         // FK from Exercise Table
-        public string exerciseEquipment { get; set; }
+        public string ExerciseEquipments { get; set; }
     }
 }

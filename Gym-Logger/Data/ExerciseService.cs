@@ -8,14 +8,14 @@ namespace Gym_Logger.Data
 {
     public class ExerciseService
     {
-        public Exercise GetExercise(string exerciseName)
+        public static Exercise GetExercise(string exerciseName)
         {
             return new Exercise
             {
-                exerciseName = exerciseName,
-                exerciseType = "bicep",
-                exerciseEquipment = "Barbell",
-                exerciseDescription = "EZ Bar Bicep Curls"
+                ExerciseName = exerciseName,
+                ExerciseTypeId = "bicep",
+                ExerciseEquipmentId = "Barbell",
+                ExerciseDescription = "EZ Bar Bicep Curls"
             };
         }
     }

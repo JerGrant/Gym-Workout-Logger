@@ -17,7 +17,7 @@ namespace Gym_Logger.Data
                 Weight = 180,
                 GoalWeight = 185,
                 DailyCalories = 2200,
-                BMI = 25.8,
+                Bmi = 25.8,
                 WorkoutsCompleted = 150,
                 HoursWorkedOut = 350.5,
                 IbsLifted = 10450

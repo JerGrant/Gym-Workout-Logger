@@ -9,23 +9,23 @@ namespace Gym_Logger.Data
     public class ExerciseInstance
     {
         // PK
-        public int exerciseInstanceId { get; set; }
+        public int ExerciseInstanceId { get; set; }
 
         // FK from Exercise Table
-        public int exerciseId { get; set; }
+        public int ExerciseId { get; set; }
 
         // FK from Workout Table
-        public int workoutId { get; set; }
+        public int WorkoutId { get; set; }
 
         // WeightLifting
-        public double? weightLifted { get; set; }
-        public int? repsLifted { get; set; }
-        public int? setsLifted { get; set; }
-        public double? weightAssisted { get; set; }
+        public double? WeightLifted { get; set; }
+        public int? RepsLifted { get; set; }
+        public int? SetsLifted { get; set; }
+        public double? WeightAssisted { get; set; }
 
         // Cardio
-        public double? duration { get; set; }
-        public int? laps { get; set; }
-        public double? distance { get; set; }
+        public double? Duration { get; set; }
+        public int? Laps { get; set; }
+        public double? Distance { get; set; }
     }
 }

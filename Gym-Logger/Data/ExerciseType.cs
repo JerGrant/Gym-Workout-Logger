@@ -10,9 +10,9 @@ namespace Gym_Logger.Data
     public class ExerciseType
     {
         // PK
-        public int exerciseTypeId { get; set; }
+        public int ExerciseTypeId { get; set; }
 
         // FK from Exercise Table
-        public string exerciseType { get; set; }
+        public string ExerciseTypes { get; set; }
     }
 }

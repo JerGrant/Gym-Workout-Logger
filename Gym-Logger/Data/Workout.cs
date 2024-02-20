@@ -10,24 +10,24 @@ namespace Gym_Logger.Data
     internal class Workout
     {
         // PK
-        public int workoutId { get; set; }
+        public int WorkoutId { get; set; }
 
         // FK from AppUser
-        public int userId { get; set; }
+        public int UserId { get; set; }
 
         // Identifier
-        public string workoutName { get; set; }
+        public string WorkoutName { get; set; }
 
         // Workout timestamps
-        public DateTime workoutDate { get; set; }
-        public double workoutDuration { get; set; }
+        public DateTime WorkoutDate { get; set; }
+        public double WorkoutDuration { get; set; }
 
         // Flags 
-        public bool isInProgress { get; set; }
-        public bool isCompleted { get; set; }
-        public DateTime createdAt { get; set; }
+        public bool IsInProgress { get; set; }
+        public bool IsCompleted { get; set; }
+        public DateTime CreatedAt { get; set; }
 
         // Gameify
-        public double? ibsLifted { get; set; }
+        public double? IbsLifted { get; set; }
     }
 }
